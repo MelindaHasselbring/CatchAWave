@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+<!--   For the size of the screen accross the board -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catch-A-Wave</title>
+   <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+<!--   Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+    <!-- MomentJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Google map -->
+
+
+
+   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Catch-A-Wave</a>
+   <!--    <nav>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Services</a>
+        <a href="index.html">Contact</a>
+        <a href="index.html">Login</a>
+      </nav>
+ -->
+
+
+<nav>
+    <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="sub-menu">
+                <li><a href="#">Dispensaries</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Shops</a></li>
+            </ul>
+
+        </li>
+      <li><a href="#">Login</a>
+    </ul>
+</nav>
+
+    </div>
+  </header>
+  <div id="main-container" class="container">  
+    <section class="main-section">
+      <h1>Best waves to surf right now.</h1>
+      <div id="rightNow">
+        <div class="row">
+          <div class="col-sm-12" id="todays-date">
+          <p id="dateNow"></p>  
+          <p id="timeNow"></p>  
+        </div>
+        </div>
+
+
+      </div>
+      <div id="beaches">
+            <form action="" class="link">
+                <ul>  
+
+                <br>
+                <li><a href="#Blacks">Blacks Beach</a></li>
+                  <p>Swell: W, NW, SW @ 16s+ | Wind: E, SE</p>           
+                  <li><a href="#Scripps">Scripps Beach</a></li>
+                  <p>Swell: W, NW, SW @ 10-16s+ | Wind: E, SE</p>
+                  <li><a href="#Windansea">Windansea Beach</a></li>
+                  <p>Swell: W, NW, SW @ 16s+ | Wind: E, SE</p>
+                  <li><a href="#Cardiff"> Cardiff Reef</a></li>
+                  <p>Swell: NW, W @ 12-16s+ | Wind: Glassy, E</p>
+                  <li><a href="#Oceanside Pier"> Cardiff Reef</a></li>
+                  <p>Swell: SSW, SW, W, WNW @ 16s+ | Wind: E, NE</p>
+                </ul>
+            </form>
+      </div>
+
+
+    </section>
+    <div id="sidebar">
+   <div id="coupon"><a href='https://www.befrugal.com/coupons/restaurant/' title="Click here to get your 10% discount when you dine or shop.">
+          <img src="assets/images/coupons-transparent.png"  alt="discounts and coupons"></a>
+      </div>   <!--    This  closes the coupon div-->
+
+    
+       <div id="connect">
+        <div> <a href="index.html"><img src="assets/images/dispensaries.png" id="dis" class="social" alt="dispensaries"></a></div>
+
+        <a href="index.html"><img src="assets/images/blueRest.png" id="rest" class="social" alt="restaurants"></a>
+
+        <a href="index.html"><img src="assets/images/redShops.png" class="social" id="shops"  alt="shops"></a>
+      </div>
+<br>
+     <div class="gif-img">
+        <!-- <div> <a href="index.html"><img src="https://media4.giphy.com/media/3o7TKUCmg4CVuMP8Fa/200.gif" id="girldog-surfing"></a></div> -->
+
+        <div> <a href="index.html"><img src="https://media3.giphy.com/media/h8E7oT2FGEJkQ/200.gif" id="dog-surfing"></a></div><br>
+
+        <div> <a href="index.html"><img src="https://media4.giphy.com/media/Or66ZxLGQ7pDy/200.gif" id="flamin-surfer"></a></div> <br>
+      </div>
+
+
+
+
+      </div>
+
+
+        <div id="coupon"><a href='https://www.befrugal.com/coupons/restaurant/' title="Click here to get your 10% discount when you dine or shop.">
+          <img src="assets/images/coupons-transparent.png"  alt="discounts and coupons"></a>
+      </div>   <!--    This  closes the coupon div-->
+
+
+    <script type="text/javascript" src="assets/javascript/wave.js"></script>
+
+    <div class="push"></div>
+  </div>
+  <footer>
+    <div class="container">
+      Copyright &copy; Catch-A-Wave 2017 
+    </div>
+  </footer>
+</body>
+</html>
