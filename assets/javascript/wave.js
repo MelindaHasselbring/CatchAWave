@@ -17,6 +17,22 @@ $("document").ready(function(){
 		$(this).effect("explode", { pieces: 64 }, 1000);
     });
 
+
+    //     $(document).on('click', ".beach-name-link", function(){
+    //         $(".main-section").invisible();
+    // })
+
+
+    $(document).on('click', ".beach-name-link", function(){
+            $("h1").invisible();
+            $("#rightNow").invisible();
+            $(".beach-names").invisible();
+            $("#map").visible();
+
+            
+
+    })
+
     // $("#rest").click(function(){
     // 	alert("Restaurant had been clicked!");
     //  	});
@@ -65,3 +81,18 @@ $("document").ready(function(){
         }
     );
 }); // end ready
+
+
+
+(function($) {
+    $.fn.invisible = function() {
+        return this.each(function() {
+            $(this).css("visibility", "hidden");
+        });
+    };
+    $.fn.visible = function() {
+        return this.each(function() {
+            $(this).css("visibility", "visible");
+        });
+    };
+}(jQuery));
