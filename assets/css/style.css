@@ -4,7 +4,6 @@ body {
   line-height: 34px;
   color: #777;
   background: url("../images/matt.jpg")  no-repeat center center fixed;
-
 }
 
 * {
@@ -16,14 +15,77 @@ body {
 html,
 body {
   height: 100%;
+   margin: 0;
+        padding: 0;
 }
 .container {
   height: auto !important;
   height: 100%;
   min-height: 100%;
   margin: 0 auto -105px;
+}
+
+
+
+   #map {
+        height: 50%;
+        width: 50%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+/*  background: #fff;*/
+  border: 3px solid #0a3955;
+  border-style: groove;
+  border-radius: 6px;
+  border-color: #0a3955;
+}
+
+/* sidebar */
+.connection {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  border: 3px solid #0a3955;
+  border-style: groove;
+  border-radius: 6px;
+  border-color: #0a3955;
+  background: #d7f7f4;
+  opacity: .8;
 
 }
+
+h2{
+  color: #045884;
+
+}
+
+.social {
+  width: 65px;
+  height: 65px;
+  margin-top: 8px;
+  margin-right: 5px;
+  text-align: center;
+}
+.social:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
 footer,
 .push {
   height: 100px;
@@ -44,7 +106,7 @@ nav a:hover {
 
 #beaches a:link {
     color: blue;
-    /*text-decoration: none;*/
+    text-decoration: none;
 }
 
 #beaches a:visited {
@@ -64,9 +126,8 @@ nav a:hover {
     text-decoration: none;
   }
 
-#dis{
-
-
+.sub-menu li:hover {
+     background-color :  red ;
 }
 /*.social:hover {
   cursor: pointer;
@@ -104,7 +165,6 @@ h2,
 h3 {
   font-family: Georgia, Times, "Times New Roman", serif;
   font-weight: 700;
-  
 }
 .class h1 {
   font-size: 30px;
@@ -114,7 +174,7 @@ h3 {
 h2,
 h3 {
   font-size: 22px;
-  color: #A44531;
+  /*color: #A44531;*/
 }
 /* header */
 #masthead {
@@ -146,6 +206,7 @@ h3 {
 nav {
   float: right;
   margin-top: 30px;
+      text-decoration: none;
 }
 nav a {
   display: inline-block;
@@ -175,12 +236,13 @@ footer {
 
 }
 
-#connect{
+#services{
   float: right;
   width: 100%;
   max-width: 370px;
   padding-top: 0px;
   /*border:  1px solid #ddd;*/
+  /*height: 116px;*/
 }
 
 #dis{
@@ -226,7 +288,7 @@ footer {
   padding: 30px;
   padding-top: 0;
   margin: 0 0 40px;
-  border-radius: 10px;
+  border-radius: 8px;
   opacity: .80;
   line-height: 26px;
   background: #d7f7f4;
@@ -262,7 +324,11 @@ form li {
   line-height: 6px;
 }
 
+.btn{
+  display: block 
+  text-align: center;
 
+}
 
 /*
 .main-section ol li{
@@ -362,7 +428,7 @@ input[type=submit] {
 }
 
 
-div #rightNow{
+div #todays-date{
     border-style: groove;
     border-radius: 6px;
     border-color: #0a3955;
@@ -448,7 +514,7 @@ nav a:active {
 
 /* style sub level links */
 nav li li a {
-  border-bottom:solid 1px  #311718;
+  border-bottom:solid 0px  #311718;
     /*border-bottom:solid 1px rgb(200,50,50);*/
     margin:0 10px;
     padding:0;
@@ -460,15 +526,9 @@ nav li li:last-child a {
 
 /* show arrows for dropdowns */
 nav li.dropdown > a {
-    /*background-image:url('../img/arrow-down.png');*/
     background-position:right 20px;
     background-repeat:no-repeat;
-}
-
-nav li li.dropdown > a {
-    /*background-image:url('../img/arrow-right.png');*/
-    background-position:right 16px;
-    background-repeat:no-repeat;
+    text-decoration: none;
 }
 
 
@@ -523,7 +583,7 @@ ul.sub-menu {
 
 
 
-#dog-surfing{ 
+#pb-dog-surfing{ 
   margin-top: 60px;
   margin-left: 50px;
   border-radius: 6px;
@@ -532,7 +592,14 @@ ul.sub-menu {
 
 
 
-#flamin-surfer{
+#oceanside-flaming-surfer{
+   margin-left: 50px;
+  border-radius: 6px;
+  border: 3px solid #0a3955;
+}
+
+
+#scripps-surfing-with-dolphin{
    margin-left: 50px;
   border-radius: 6px;
   border: 3px solid #0a3955;
@@ -540,6 +607,18 @@ ul.sub-menu {
 
 
 
+#windandsea-awesome-surfer{
+   margin-left: 50px;
+  border-radius: 6px;
+  border: 3px solid #0a3955;
+}
 
 
+#blacks-flying-surfer{
+   margin-left: 50px;
+  border-radius: 6px;
+  border: 3px solid #0a3955;
+  width: 362x;
+  height: 206px;
+}
 

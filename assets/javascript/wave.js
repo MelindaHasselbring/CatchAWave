@@ -14,7 +14,7 @@ $("document").ready(function(){
 	$("div #dis").click(function(e){
         e.preventDefault();
      	// alert("Dispensaries had been clicked!");
-		$(this).effect("explode", { pieces: 64 }, 1000);
+		$('div #dis').effect("explode", { pieces: 64 }, 1000);
     });
 
 
@@ -27,9 +27,8 @@ $("document").ready(function(){
             $("h1").invisible();
             $("#rightNow").invisible();
             $(".beach-names").invisible();
-            $("#map").visible();
-
-            
+            // $("#map").visible();   
+               $(".main-section").css({'Background': "../images/matt.jpg"});
 
     })
 
@@ -96,3 +95,5 @@ $("document").ready(function(){
         });
     };
 }(jQuery));
+
+
