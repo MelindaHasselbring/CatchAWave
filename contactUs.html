@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+<!--   For the size of the screen accross the board -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catch-A-Wave</title>
+   <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiyYLQik2XfizxTDbyxZigzLenVW6buXs&libraries=places&callback=initMap" async defer></script>
+
+
+<!--   Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Firebase -->
+   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+    <!-- MomentJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <!-- Google map -->
+
+
+
+   <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+</head>
+<body>
+
+<button id ="button">button</button>
+   <!--  <div id="map"></div> -->
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Catch-A-Wave</a>
+   <!--    <nav>
+        <a href="index.html">About Us</a>
+        <a href="index.html">Services</a>
+        <a href="index.html">Contact</a>
+        <a href="index.html">Login</a>
+      </nav>
+ -->
+
+
+<nav>
+    <ul>
+      <li class="dropdown">
+        <a href="index.html">About Us</a>
+          <ul class="sub-menu">
+                <li><a href="https://github.com/jmj62/jmj62.github.io">Jon, BED</a></li>
+                <li><a href="">Chad, BED</a></li>
+                <li><a href="https://seizitup.github.io/Basic-Portfolio/index.html">Chris, BED</a></li>
+                <li><a href="https://melindahasselbring.github.io/Bootstrap-Portfolio.github.io/">Melinda, PM FED</a></li>
+          </ul>
+          </li>
+        <li><a href="contactUs.html">Contacts</a></li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="sub-menu">
+                <li><a href="#">Dispensaries</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Shops</a></li>
+          </ul>
+
+        </li>
+      <li><a href="#">Login</a>
+    </ul>
+</nav>
+
+    </div>
+  </header>
+  <div id="main-container" class="container">  
+    
+      <!-- <h1>Best waves to surf right now.</h1> -->
+   <section class="main-section">
+      <h1>Contact Us</h1>
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="JohnSmith@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+    </section>
+    <section class="connection">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+
+
+        <a href="https://github.com/MelindaHasselbring"><img src="assets/images/round-pink-github.png" class="social" alt="Github"></a>
+        
+
+        <a href="https://www.linkedin.com/in/melindahasselbring/"><img src="assets/images/round-linkedin.png" class="social" alt="LinkedIn"></a>
+
+
+        <a href="https://stackoverflow.com/users/7696403/melh"><img src="assets/images/round-stackoverflow.png" class="social round-stackoverflow.png" alt="stack Overflow"></a>
+
+
+      </div>
+   
+     
+
+
+    </section>
+    <div id="sidebar">
+  
+      
+<br>
+     <div class="gif-img">
+  
+
+        <div> <a href="index.html"><img src="https://media3.giphy.com/media/h8E7oT2FGEJkQ/200.gif" id="pb-dog-surfing"></a></div><br>
+
+      
+      </div>
+
+
+      </div>
+
+
+        <div id="coupon"><a href='https://www.befrugal.com/coupons/restaurant/' title="Click here to get your 10% discount when you dine or shop.">
+          <img src="assets/images/coupons-transparent.png"  alt="discounts and coupons"></a>
+      </div>   <!--    This  closes the coupon div-->
+
+
+    <script type="text/javascript" src="assets/javascript/wave.js"></script>
+
+    <div class="push"></div>
+  </div>
+  <footer>
+    <div class="container">
+      Copyright &copy; Catch-A-Wave 2017 
+    </div>
+  </footer>
+</body>
+</html>
