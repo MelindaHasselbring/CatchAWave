@@ -13,8 +13,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/javascript/map.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiyYLQik2XfizxTDbyxZigzLenVW6buXs&libraries=places&callback=initMap" async defer></script>
+
+
 
 
 <!--   Bootstrap -->
@@ -76,6 +76,7 @@
   </header>
   <div id="main-container" class="container">  
     <section class="main-section">
+      <div id="map" class="map"></div>
       <h1>Best waves to surf right now.</h1>
       <div id="rightNow">
         <div class="row">
@@ -89,36 +90,29 @@
       </div>
       <div id="beaches">
              <form action="" class="beach-names">
+             
                 <ul>  
-                <li><a class="beach-name-link"   href="#Blacks">Blacks Beach</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#Blacks" >Blacks Beach</Button></li>
                   <p>Swell: W, NW, SW @ 16s+ | Wind: E, SE</p>           
-                  <li><a class="beach-name-link"   href="#Scripps">Scripps Beach</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#Scripps">Scripps Beach</button></li>
                   <p>Swell: SSW, SW, W, WNW @ 16s+ | Wind: E, NE</p>
-                  <li><a class="beach-name-link"   href="#Shores">La Jolla Shores</a></li>
+                  <li><button  class="beach-name-link btn btn-primary"   href="#Shores">La Jolla Shores</button></li>
                   <p>Swell: SSW, SW, W, WNW @ 16s+ | Wind: E, NE</p>
-                  <p>Swell: W, NW, SW @ 16s+ | Wind: E, SE</p>
-                  <li><a class="beach-name-link"   href="#Cardiff">Cardiff Reef</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#Cardiff">Cardiff Reef</button></li>
                   <p>Swell: W, NW, SW @ 10-16s+ | Wind: E, SE</p>
-                  <li><a class="beach-name-link"   href="#Windansea">Windansea Beach</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#Windansea">Windansea Beach</button></li>
                   <p>Swell: NW, W @ 12-16s+ | Wind: Glassy, E</p>
-                  <li><a class="beach-name-link"   href="#Oceanside">Oceanside Pier</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#Oceanside">Oceanside Pier</button></li>
                   <p>Swell: SSW, SW, W, WNW @ 16s+ | Wind: E, NE</p>
-                  <li><a class="beach-name-link"   href="#PB">Pacific Beach</a></li>
+                  <li><button class="beach-name-link btn btn-primary"   href="#PB">Pacific Beach</button></li>
                   <p>Swell: SSW, SW, W, WNW @ 16s+ | Wind: E, NE</p>
                 </ul>
 
              </form>
 
-             <form><input class="btn btn-primary" type="reset" value="Reset"  onClick="window.location.reload()"></form>
+             <form><input class="btn btn-primary clearBtn" type="reset" value="Reset"  onClick="window.location.reload()"></form>
 
       </div>
-
-<div>
-<button id ="button"></button>
-    <div id="map"></div>
-<div>
-
-
 
     </section>
     <div id="sidebar">
@@ -169,5 +163,7 @@
       Copyright &copy; Catch-A-Wave 2017 
     </div>
   </footer>
+  <script type="text/javascript" src="assets/javascript/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDiyYLQik2XfizxTDbyxZigzLenVW6buXs&libraries=places&callback=initMap" async defer></script>
 </body>
 </html>

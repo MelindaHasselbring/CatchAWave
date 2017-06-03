@@ -2,23 +2,21 @@
 // parameter when you first load the API. For example:
 // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
 
-
+var map;
+var infowindow;
 
 $(document).ready(function() {
   console.log();
 
 
-  $("#button").click(function() {
-
-    $(".map").show();
-
-    console.log("button clicked yo");
+  $(".beach-name-link").click(function(event) {
+    event.preventDefault()
+    $("#map").css("visibility", "visible");
 
   });
 
 });
-  var map;
-  var infowindow;
+  
 
   function initMap() {
     var pyrmont = {
