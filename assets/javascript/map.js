@@ -4,13 +4,47 @@
 
 var map;
 var infowindow;
+var beaches = {
+    blacks: {
+        lat: 32.8896,
+        lng: -117.2536
+    },
+    scripps: {
+        lat: 32.8636,
+        lng: -117.2546
+    },
+    laJollaShores: {
+        lat: 32.8690,
+        lng: -117.2557
+    },
+    cardiff: {
+        lat: 33.0098,
+        lng: -117.2796
+    },
+    windAndSea: {
+        lat: 32.8312,
+        lng: -117.2811
+    },
+    oceansidePier: {
+        lat: 33.1930,
+        lng: -117.3865
+    },
+    pacificBeach: {
+        lat: 32.792699,
+        lng: -117.257906
+    }
+}
+
 
 $(document).ready(function() {
   console.log();
 
 
-  $(".beach-name-link").click(function(event) {
-    event.preventDefault()
+  $("[data-beach]").click(function(event) {
+    event.preventDefault();
+    var beach = $(this).attr("data-beach");
+    var cords = beaches[beach];
+    map.panTo(cords);
     $("#map").css("visibility", "visible");
 
   });
@@ -19,31 +53,30 @@ $(document).ready(function() {
   
 
   function initMap() {
-    var pyrmont = {
-      lat: 32.8636,
-      lng: -117.2546
+    var sanDiego = {
+      lat: 32.7157,
+      lng: -117.1611
     };
 
     map = new google.maps.Map(document.getElementById('map'), {
-      center: pyrmont,
+      center: sanDiego,
       zoom: 15
     });
 
     infowindow = new google.maps.InfoWindow();
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch({
-      location: pyrmont,
+      location: sanDiego,
       radius: 1000,
-      type: ['restaurant']
     }, callback);
   }
 
   function callback(results, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      for (var i = 0; i < results.length; i++) {
-        createMarker(results[i]);
-      }
-    }
+    // if (status === google.maps.places.PlacesServiceStatus.OK) {
+    //   for (var i = 0; i < results.length; i++) {
+    //     createMarker(results[i]);
+    //   }
+    // }
 
 
   }
@@ -63,8 +96,5 @@ $(document).ready(function() {
     });
   }
 
-  $("#button").click(function() {
-    console.log("The paragraph was clicked.");
-  });
 
 
