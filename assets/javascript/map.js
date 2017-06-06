@@ -116,7 +116,7 @@ $("#shops").click(function(event){
   });
 
 
-  $("#bar").click(function(event){
+  $("#brew").click(function(event){
     console.log(currentCords);
     if (!currentCords){
       alert("Please choose a Beach");
