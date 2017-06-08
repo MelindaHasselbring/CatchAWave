@@ -51,7 +51,7 @@ $(document).ready(function() {
   });
 
 
-  $("#rest").click(function(event){
+  $(".rest").click(function(event){
     console.log(currentCords);
     if (!currentCords){
       alert("Please choose a Beach");
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
 
 
-$("#shops").click(function(event){
+$(".shops").click(function(event){
     console.log(currentCords);
     if (!currentCords){
       alert("Please choose a Beach");
@@ -116,7 +116,7 @@ $("#shops").click(function(event){
   });
 
 
-  $("#brew").click(function(event){
+  $(".brew").click(function(event){
     console.log(currentCords);
     if (!currentCords){
       alert("Please choose a Beach");
