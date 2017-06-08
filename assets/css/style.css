@@ -37,11 +37,17 @@ input[type=submit]:hover {
 }*/
 
 nav a:hover {
-/*  color: #5e7f7e;*/
     color: white;
     text-decoration: none;
+     background-color :  blue;
+     opacity: 1.0;
   }
   
+.sub-menu li:hover {
+     background-color :  blue ;
+     opacity: 1.0;
+}
+
 #beaches a:link {
     color: blue;
     /*text-decoration: none;*/
@@ -58,18 +64,8 @@ input[type=submit]{
     color: white;
     text-decoration: none;
 }
-nav a:hover {
-/*  color: #5e7f7e;*/
-    color: white;
-    text-decoration: none;
-  }
 
-/*.social:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}*/
-/* end hover styling */
-/* general styling */
+
 .container {
   width: 100%;
   max-width: 960px;
@@ -159,11 +155,10 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-
 li#dateNow, li#timeNow
 {
-  color: #d7f7f4;
-    font-size: 16px;
+  color: white;
+  font-size: 12px;
   text-shadow: 1px 1px 4px #000;
 }
 
@@ -210,6 +205,7 @@ button{
   position: absolute;
   margin-bottom: 50px;
   padding-bottom: 50px;
+  margin-left: 40px;
 }
 
 
@@ -431,13 +427,14 @@ nav li{
 display: inline-block;
 }
 
+
 nav li ul {    
   background-color:#AB7D4D;
     /*background-color:rgb(225,75,75);*/
     position:absolute;
     left:0;
     top:40px; /* make this equal to the line-height of the links (specified below) */
-    width:200px;
+
 
 }
 nav li li {
@@ -457,8 +454,9 @@ nav li li ul {
 /* style all links */
 nav a {
     line-height:40px;
-    padding:0 12px;
-    margin:0 12px;
+    /*padding:0 12px;*/
+    /*margin:0 12px;*/
+    width: 120px;
 }
 
 nav a:hover,
@@ -467,97 +465,36 @@ nav a:active {
     color: white;
 }
 
-/* style sub level links */
-nav li li a {
-  border-bottom:solid 1px  #311718;
-    /*border-bottom:solid 1px rgb(200,50,50);*/
-    margin:0 10px;
-    padding:0;
 
-}
 nav li li:last-child a {
     border-bottom:none;
 }
 
 /* show arrows for dropdowns */
 nav li.dropdown > a {
-    /*background-image:url('../img/arrow-down.png');*/
     background-position:right 20px;
     background-repeat:no-repeat;
+    text-decoration: none;
+    /*width: 120px;*/
 }
 
-nav li li.dropdown > a {
-    /*background-image:url('../img/arrow-right.png');*/
-    background-position:right 16px;
-    background-repeat:no-repeat;
-}
+
 
 
 .sub-menu li {
   display: block;
+
 }
 
 /* hide sub menu links */
 ul.sub-menu {
     display:none;
-    width: 120px;
-}
-
-/*
-#coupon{
-    position:               absolute;
-    margin-top:             50px;
-    right:                   -90px;
-    transition:             transform 2s;
-    -webkit-transition:     -webkit-transform 2s;
-    -moz-transition:        -moz-transform 2s;
-    -o-transition:          -o-transform 2s;   
-}
-#coupon a, img{
-    border:                none;
-}
-#coupon:hover{
-    transform:             rotate(45deg);
-    -webkit-transform:     rotate(45deg);
-    -moz-transform:        rotate(45deg);
-    -o-transform:          rotate(45deg);
-    -ms-transform:         rotate(45deg);
-}*/
-
-/*=============================   images ==========*/
-
-
-
-
-#gif-img {
-  margin-top: 50px;
-  float: right;
-  width: 100%;
-  max-width: 362px;
-  /*padding-top: 250px;*/
-  margin-bottom: 20px;
-/*  border-radius: 6px;
-  border: 3px solid #0a3955;*/
-  position: absolute;
 
 }
 
 
 
-#dog-surfing{ 
-  margin-top: 60px;
-  margin-left: 50px;
-  border-radius: 6px;
-  border: 3px solid #0a3955;
-}
 
-
-
-#flamin-surfer{
-   margin-left: 50px;
-  border-radius: 6px;
-  border: 3px solid #0a3955;
-}
  /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
@@ -578,6 +515,8 @@ ul.sub-menu {
       .clearBtn {
         position: relative;
         z-index: 20;
+        margin-left: 180px;
+        margin-top: 20px;
       }
 
 
